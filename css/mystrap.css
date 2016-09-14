@@ -1,0 +1,20 @@
+.title {
+	margin-top:15px;
+}
+h3.mainLinks:hover{
+	color: #3333ff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.panel{
+	cursor:pointer;
+}
+.panel-heading:hover {
+	background-color:#F0F0F0;
+}
+.panel-body{
+	cursor:auto;
+}
+h4.panel-title{
+	font-size: 150%;
+}

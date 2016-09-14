@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>People's Ballot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mystrap.css">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <script>
+      var map;
+      	function initMap() {
+        	map = new google.maps.Map(document.getElementById('map'), {
+          		center: {lat: 47.603843, lng: -122.330045},
+          		zoom: 12
+        	});
+        }
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <div class="container-fluid">
+      <div class="row header" style="background-color:#0052A5;">
+			  <div class="col-md-12">
+				  <h2 style="color:white" class="title"> People's Ballot </h2>
+			  </div>
+		  </div>
+      <div class="row">
+			  <div class="panel-group" style="margin-top:15px;" id="main-content">
+  				<div class="panel panel-default" data-toggle="collapse" data-parent="#main-content" href="#collapse1">
+    				<div class="panel-heading">
+      					<h4 class="panel-title">
+        					Your Democracy.
+      					</h4>
+    				</div>
+    				<div id="collapse1" onClick="event.stopPropagation();" class="panel-collapse collapse"><!-- add 'in' to class to default open pannel -->
+      					<div class="panel-body">
+      						<p>- Across the United States, Republicans control 68 out of 98 partisan electoral legislatures while Democrats control 30; <a href="http://www.realclearpolitics.com/articles/2014/11/11/the_other_gop_wave_state_legislatures__124626.html">click here to learn more.</a></p>
+                  <p>- In Washington State, we elect our judicial branch; <a href="http://votingforjudges.org/">click here to learn more.</a></p>
+						    </div>
+  					</div>
+  				</div>
+  				<div class="panel panel-default" data-toggle="collapse" data-parent="#main-content" href="#collapse2">
+    				<div class="panel-heading">
+      					<h4 class="panel-title">
+        					Your Country.
+      					</h4>
+    				</div>
+    				<div id="collapse2" onClick="event.stopPropagation();" class="panel-collapse collapse">
+      					<div class="panel-body">
+                  <p>- Federal Elections impact your life on a daily basis, but their rate of turnout is much lower in non-Presidential years. <a href="http://www.pewresearch.org/fact-tank/2014/07/24/voter-turnout-always-drops-off-for-midterm-elections-but-why/"> Click here to learn more.</a></p>
+                  <p>- All who are eligible to vote, should. <a href="http://www.sos.wa.gov/elections/register.aspx"> Click here to register.</a></p>
+      					</div>
+    				</div>
+  				</div>
+  				<div class="panel panel-default" data-toggle="collapse" data-parent="#main-content" href="#collapse3">
+    				<div class="panel-heading">
+      					<h4 class="panel-title">
+        					Your Region.
+     					</h4>
+    				</div>
+    				<div id="collapse3" onClick="event.stopPropagation();" class="panel-collapse collapse">
+      				<div class="panel-body">
+                <p>- Seattle and the Greater Puget Sound are experiencing massive economic growth; this brings a host of benefits and growing pains. Below are some blogs and resources to keep in tune with local politics.</p> <br>
+                <a href="http://www.seattlemet.com/blogs/publicola"> Publicola, published by the Seattle Met.</a></p> <br>
+                <a href="http://crosscut.com/"> Crosscut Northwest.</a></p> <br>
+                <a href="http://www.seattletimes.com/seattle-news/politics/"> The Seattle Times.</a></p> <br> 
+      				</div>
+    				</div>
+  				</div>
+  				<div class="panel panel-default" data-toggle="collapse" data-parent="#main-content" href="#collapse4">
+  					<div class="panel-heading">
+  						<h4 class="panel-title">
+  							Your Vote.
+  						</h4>
+  					</div>
+  				  <div id="collapse4" onClick="event.stopPropagation();" class="panel-collapse collapse">
+  				  	<div class="panel-body">
+  					  	 <p>- The right to vote must be appreciated. <a href="http://massvote.org/voterinfo/history-of-voting-rights/"> Click here for a history of Voting.</a></p>
+  		  			</div>
+  			    </div>
+        </div>
+  			</div>
+  		</div>
+      <peoples-ballot>Loading...</peoples-ballot>
+    </div>
+  </body>
+</html>
