@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var region_service_1 = require('./region.service');
-var RegionComponent = (function () {
-    function RegionComponent(regionService) {
-        this.region = regionService.getRegion();
+var AccordionComponent = (function () {
+    function AccordionComponent() {
     }
-    RegionComponent = __decorate([
+    AccordionComponent = __decorate([
         core_1.Component({
-            selector: 'regions',
-            template: "\n    <form class=\"form\" role=\"form\">\n\t    <div class=\"form-group\">\n\t\t    <label for=\"county\">County</label>\n\t\t\t<input type=\"county\" class=\"form-control\">\n\t\t</div>\n\t\t<button type=\"submit\" class=\"btn btn-default\">Submit</button>\n\t</form>\n    ",
-            providers: [region_service_1.RegionService]
+            selector: 'accordion',
+            templateUrl: 'app/accordion.component.html',
         }), 
-        __metadata('design:paramtypes', [region_service_1.RegionService])
-    ], RegionComponent);
-    return RegionComponent;
+        __metadata('design:paramtypes', [])
+    ], AccordionComponent);
+    return AccordionComponent;
 }());
-exports.RegionComponent = RegionComponent;
-//# sourceMappingURL=region.component.js.map
+exports.AccordionComponent = AccordionComponent;
+//# sourceMappingURL=accordion.component.js.map

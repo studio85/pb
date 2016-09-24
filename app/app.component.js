@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'peoples-ballot',
-            template: "\n    <region></region>\n\n    "
+            template: "\n    <accordion></accordion>\n    <gmap></gmap>\n    ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
